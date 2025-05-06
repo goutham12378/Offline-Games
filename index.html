@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>🎮 Offline Game Hub</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1 class="fade-in">🎮 Offline Game Hub</h1>
+    <p class="subtitle slide-up">Play 10+ classic games without the internet!</p>
+  </header>
+
+  <main>
+    <ul class="game-list fade-in-delayed">
+      <li><a href="games/tic-tac-toe.html">Tic Tac Toe</a></li>
+      <li><a href="games/snake.html">Snake</a></li>
+      <li><a href="games/tetris.html">Tetris</a></li>
+      <li><a href="games/pong.html">Pong</a></li>
+      <li><a href="games/memory.html">Memory Game</a></li>
+      <li><a href="games/whack-a-mole.html">Whack-a-Mole</a></li>
+      <li><a href="games/brick-breaker.html">Brick Breaker</a></li>
+      <li><a href="games/flappy-bird.html">Flappy Bird</a></li>
+      <li><a href="games/guess-number.html">Guess the Number</a></li>
+      <li><a href="games/rock-paper-scissors.html">Rock Paper Scissors</a></li>
+    </ul>
+  </main>
+
+  <footer>
+    <p>Made with ❤️ | Works Offline</p>
+  </footer>
+
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('sw.js');
+    }
+  </script>
+</body>
+</html>
